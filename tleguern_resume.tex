@@ -1,0 +1,211 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original authors:
+% Adrien Friggeri (adrien@friggeri.net): https://github.com/afriggeri/CV
+% Antoine Marandon (antoine@marandon.fr): https://github.com/ntnmrndn/Resume
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+
+\begin{document}
+
+\header{Tristan}{Le Guern}{Freelance DevOps/SRE}{Gwir ha leal}
+
+%-------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%-------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{Contact}
+~
+\textbf{Address}: Limerick, Ireland
+~
+\textbf{Phone}: \href{tel:0033665630252}{\underline{+33 (0)6 65 63 02 52}}
+~
+\textbf{Email/XMPP}: \href{mailto:tleguern@bouledef.eu}{\underline{tleguern@bouledef.eu}}
+\section {Links}
+~
+\href{https://github.com/Aversiste}{Github: \underline{Aversiste}}
+\href{https://www.bouledef.eu/~tleguern}{Website: \underline{WWW}}
+\section{Personal}
+~
+\textbf{Nationality}
+French
+\section{Skills}
+~
+\textbf{Programming Languages:} C, C++, Shell, Python
+\textbf{Operating Systems:} OpenBSD, Linux
+\textbf{DevOps:} Ansible, Terraform, Packer, Cloud-init, Jenkins
+\textbf{Human Languages:} French (Mother Tongue), English (Fluent), Breton (Beginner)
+\textbf{Others:} \LaTeX
+\section{Hobbies}
+~
+Brewing, wine making, cheese making, DIY
+\end{aside}
+
+%-------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Gwern (my freelance company)}
+\begin{entrylist}
+\entry {2019--2019} {Remote DevOps for Deveryware} {Limerick, Ireland} {
+  \emph{Responsible for the deployment of a mobile app's backend.}
+  \begin{itemize}
+    \item Handled 240 servers split between five environments.
+    \item Overhauled and cleaned up many Ansible roles and playbooks, amounting to roughly 12000 lines of code.
+    \item Rewrote most shell scripts to improve their safety and performance.
+    \item Contribution to open source projects (ansible-haproxy, ansible-wazuh-agent, ansible-rcron, ansible-matomo).
+    \item Deployment of security tool Wazuh.
+    \item Security tests on the VRRP protocol.
+    \item Handled images creation with Packer.
+    \item Handled images and ressources deployment with Terraform.
+    \item Became maintainer of public role Deveryware/ansible-haproxy.
+    \item Wrote extensive documentation dedicated to oncall ops.
+    \item Trained my successor on the job.
+  \end{itemize}
+}
+\entry {2017--2018} {Remote Devops for Ahrefs} {Paris, France} {
+  \emph{Worked in an Ops team}
+  \begin{itemize}
+    \item Managed multiple Elasticsearch clusters reaching thousands of nodes.
+    \item Configuration management with Puppet.
+    \item Oncall work.
+  \end{itemize}
+}
+\end{entrylist}
+
+\subsection{Orange}
+\begin{entrylist}
+\entry {2014--2017} {Sysadmin/DevOps} {Paris, France} {
+  \emph{Full time in the subsidiary hosting services for the rest of the group.}
+  \begin{itemize}
+    \item Administered a Xymon based monitoring solution, handling more than 5000 ressources (servers, services, applications, URL, ...) and 500 agents.
+    \item Managed internal Xymon fork and contributions to upstream.
+    \item Developped custom monitoring agents (Perl, Python, shell).
+    \item Wrote the documentation for each and every tools.
+    \item Wrote the disaster recovery procedure.
+    \item Fixed Ansible playbooks to ensure idempotence during deployments.
+    \item Implemented dynamic DNS updates in the internal DNS API.
+    \item Various improvements to the DNS management tools.
+    \item Contributed to nsdiff (https://github.com/fanf2/nsdiff).
+    \item Trained and provided technical support for my colleagues.
+  \end{itemize}
+}
+\end{entrylist}
+
+%------------------------------------------------
+
+\subsection{Mind Technologies}
+\begin{entrylist}
+\entry {2014--2014} {Network engineer} {Paris, France} {
+  \emph{Fulltime in a company offering expertise in managed network infrastructures.}
+}
+\end{entrylist}
+
+%------------------------------------------------
+
+\pagebreak
+
+\subsection{Linagora}
+\begin{entrylist}
+\entry {2012--2014} {System engineer} {Paris, France} {
+  \emph{Internship within a small team dedicated to cloud hosting followed by fulltime at various clients.}
+  \begin{itemize}
+    \item Administered a Xen cluster and helped clients into building their hosted services.
+    \item Migrated the old clients ressources from dedicated or shared hostings to virtual machines with Puppet as a deployment tool.
+    \item Implemented p2v (physical to virtual) migration solutions.
+    \item Developped an internal domain name monitoring solution.
+    \item Administered multiple Nagios based monitoring solutions for various clients.
+    \item Handled a three months classified mission for the French military at Fort Mont-Valérien, involving documentation, formation and monitoring.
+    \item Replaced a team of four sysadmins at Cergy-Pontoise University, worked on the complete overhaul of the SMTP, LDAP and DNS services. Also wrote documentations and created an inventory of the server rooms.
+  \end{itemize}
+}
+\end{entrylist}
+
+%------------------------------------------------
+
+\subsection{Lab'Free}
+\begin{entrylist}
+\entry {2010--2011} {C++ Developer} {Paris, France} {
+  \emph{Internship. Developed and oversaw implementation of a video streaming software, in C++ and JavaScript.}
+}
+\end{entrylist}
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+\entry
+{2008--2013}
+{Master's dregree {\normalfont of Computer Sciences} at EPITECH}
+{Paris, France}
+{\emph{5 years courses}}
+\entry
+{2011--2012}
+{Exchange Student {\normalfont at Keele University}}
+{England}
+{\emph{Computer Sciences courses}}
+\entry
+{2008}
+{Baccalauréat {\normalfont at Lycée Colbert}}
+{Lorient, France}
+{\emph{Baccalauréat, scientific specialisation}}
+\end{entrylist}
+
+%-------------------------------------------------------------------------------
+%	Presonal
+%-------------------------------------------------------------------------------
+
+\section{Personal Projects}
+\begin{entrylist}
+\entry
+{2018}
+{ansible modules}
+{Developer}
+{Various ansible modules for matomo, keepalived, haproxy, ...}
+\entry
+{2018}
+{www.libravatar.org}
+{Q/A}
+{Team member dedicated to Q/A.}
+\entry
+{2018}
+{libravatar.cgi}
+{Developer}
+{Small, secure implementation of the Libravatar protocol for OpenBSD}
+\entry
+{2011}
+{libtuntap}
+{Developer}
+{Portable library for the creation and management of virtual network interfaces\\
+\emph{Works on OpenBSD, NetBSD, FreeBSD, DragonFly, Linux, Mac OS X and Windows.}}
+\entry
+{2011--2013}
+{tNETacle (decentralized VPN)}
+{Developer}
+{C/C++ solution developed with a 8 students team \\
+\emph{Asymmetric cryptography, UPNP, IPC, UDP, TCP, TLS, DTLS, portability, compression...}}
+\end{entrylist}
+
+\end{document}

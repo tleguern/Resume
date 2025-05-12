@@ -40,17 +40,16 @@
 \textbf{Email/XMPP}: \href{mailto:tleguern@bouledef.eu}{\underline{tleguern@bouledef.eu}}
 \section {Links}
 ~
-\href{https://github.com/Aversiste}{Github: \underline{Aversiste}}
-\href{https://www.bouledef.eu/~tleguern}{Website: \underline{WWW}}
+Github: \href{https://github.com/tleguern}{@tleguern}
 \section{Personal}
 ~
 \textbf{Nationality}
 French
 \section{Skills}
 ~
-\textbf{Programming Languages:} C, C++, Shell, Python
+\textbf{Programming Languages:} C, Shell, Python
 \textbf{Operating Systems:} OpenBSD, Linux
-\textbf{DevOps:} Ansible, Terraform, Packer, Cloud-init, Jenkins
+\textbf{DevOps:} Ansible, Terraform, Packer, cloud-init.
 \textbf{Human Languages:} French (Mother Tongue), English (Fluent), Breton (Beginner)
 \textbf{Others:} \LaTeX
 \section{Hobbies}
@@ -64,8 +63,27 @@ Brewing, wine making, cheese making, DIY
 
 \section{Experience}
 
-\subsection{Gwern (my freelance company)}
+\subsection{Gwern}
 \begin{entrylist}
+\entry {2020--2022} {Remote Senior DevOps for Deveryware} {Brest, Brittany} {
+  \emph{Resident Ansible expert}
+  \begin{itemize}
+    \item Trained and mentored Junior DevOps employees.
+    \item Teached safe shell script development.
+    \item Maintenance of many public and private Ansible roles.
+    \item Push for the usage of private Ansible collections.
+  \end{itemize}
+}
+\entry {2019--2020} {Remote DevOps for Deveryware} {Brest, Brittany} {
+  \emph{Responsible for the improvements of the developer tools.}
+  \begin{itemize}
+    \item Improved the installation and upgrade of SonarQube, Redmine and Wekan through dedicated Ansible roles.
+    \item Managed an internal mirror of external git repositories (private Ansible Galaxy).
+    \item Rewrote shell scripts and Ansible roles for efficiency.
+    \item Contributed to open source projects (Ansible's community.general collection)
+    \item Deployment of security tools Tenable and Nessus.
+  \end{itemize}
+}
 \entry {2018--2019} {Remote DevOps for Deveryware} {Limerick, Ireland} {
   \emph{Responsible for the deployment of a mobile app's backend.}
   \begin{itemize}
@@ -78,10 +96,10 @@ Brewing, wine making, cheese making, DIY
     \item Handled images creation with Packer and deployment with Terraform.
     \item Became maintainer of public role Deveryware/ansible-haproxy.
     \item Wrote extensive documentation dedicated to oncall ops.
-    \item Trained an internal devops on the job.
+    \item Trained an internal DevOps on the job.
   \end{itemize}
 }
-\entry {2017--2018} {Remote Devops for Ahrefs} {Paris, France} {
+\entry {2017--2018} {Remote DevOps for Ahrefs} {Paris, France} {
   \emph{Worked in an Ops team}
   \begin{itemize}
     \item Managed multiple Elasticsearch clusters reaching thousands of nodes.
@@ -89,6 +107,8 @@ Brewing, wine making, cheese making, DIY
   \end{itemize}
 }
 \end{entrylist}
+
+\pagebreak
 
 \subsection{Orange}
 \begin{entrylist}
@@ -119,31 +139,29 @@ Brewing, wine making, cheese making, DIY
 
 %------------------------------------------------
 
-\pagebreak
-
-\subsection{Linagora}
-\begin{entrylist}
-\entry {2012--2014} {System engineer} {Paris, France} {
-  \begin{itemize}
-    \item Administered a Xen cluster and helped clients into building their hosted services.
-    \item Migrated the old clients ressources from dedicated or shared hostings to virtual machines with Puppet as a deployment tool.
-    \item Implemented p2v (physical to virtual) migration solutions.
-    \item Developped an internal domain name monitoring solution.
-    \item Administered multiple Nagios based monitoring solutions for various clients.
-    \item Handled a three months classified mission for the French military involving documentation, training and monitoring.
-    \item Replaced a team of four sysadmins at Cergy-Pontoise University, worked on the complete overhaul of the SMTP, LDAP and DNS services.
-  \end{itemize}
-}
-\end{entrylist}
+%\subsection{Linagora}
+%\begin{entrylist}
+%\entry {2012--2014} {System engineer} {Paris, France} {
+%  \begin{itemize}
+%    \item Administered a Xen cluster and helped clients into building their hosted services.
+%    \item Migrated the old clients ressources from dedicated or shared hostings to virtual machines with Puppet as a deployment tool.
+%    \item Implemented p2v (physical to virtual) migration solutions.
+%    \item Developped an internal domain name monitoring solution.
+%    \item Administered multiple Nagios based monitoring solutions for various clients.
+%    \item Handled a three months classified mission for the French military involving documentation, training and monitoring.
+%    \item Replaced a team of four sysadmins at Cergy-Pontoise University, worked on the complete overhaul of the SMTP, LDAP and DNS services.
+%  \end{itemize}
+%}
+%\end{entrylist}
 
 %------------------------------------------------
 
-\subsection{Lab'Free}
-\begin{entrylist}
-\entry {2010--2011} {C++ Developer} {Paris, France} {
-  \emph{Internship. Developed and oversaw implementation of a video streaming software, in C++ and JavaScript.}
-}
-\end{entrylist}
+%\subsection{Lab'Free}
+%\begin{entrylist}
+%\entry {2010--2011} {C++ Developer} {Paris, France} {
+%  \emph{Internship. Developed and oversaw implementation of a video streaming software, in C++ and JavaScript.}
+%}
+%\end{entrylist}
 
 %-------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -154,7 +172,7 @@ Brewing, wine making, cheese making, DIY
 \begin{entrylist}
 \entry
 {2008--2013}
-{Master's dregree {\normalfont of Computer Sciences at EPITECH}}
+{Master's degree {\normalfont of Computer Sciences at EPITECH}}
 {Paris, France}
 {\emph{5 year course}}
 \entry
@@ -170,16 +188,21 @@ Brewing, wine making, cheese making, DIY
 \end{entrylist}
 
 %-------------------------------------------------------------------------------
-%	Presonal
+%	OPEN SOURCE
 %-------------------------------------------------------------------------------
 
-\section{Personal Projects}
+\section{Open Source}
 \begin{entrylist}
 \entry
+{2020}
+{Ansible modules for Proxmox VE}
+{Maintainer}
+{Maintainer for Ansible's modules proxmox, proxmox\_kvm and proxmox\_template inside collection community.general}
+\entry
 {2018}
-{ansible modules}
+{Various Ansible roles}
 {Developer}
-{Various ansible modules for matomo, keepalived, haproxy, ...}
+{Wrote various ansible modules for matomo, keepalived, haproxy, ...}
 \entry
 {2018}
 {www.libravatar.org}
@@ -190,17 +213,17 @@ Brewing, wine making, cheese making, DIY
 {libravatar.cgi}
 {Developer}
 {Small, secure implementation of the Libravatar protocol for OpenBSD}
-\entry
-{2011}
-{libtuntap}
-{Developer}
-{Popular portable library for the creation and management of virtual network interfaces.}
-\entry
-{2011--2013}
-{tNETacle (decentralized VPN)}
-{Developer}
-{C/C++ solution developed with a 8 students team \\
-\emph{Asymmetric cryptography, UPNP, IPC, UDP, TCP, TLS, DTLS, portability, compression...}}
+%\entry
+%{2011}
+%{libtuntap}
+%{Developer}
+%{Popular portable library for the creation and management of virtual network interfaces.}
+%\entry
+%{2011--2013}
+%{tNETacle (decentralized VPN)}
+%{Developer}
+%{C/C++ solution developed with a 8 students team \\
+%\emph{Asymmetric cryptography, UPNP, IPC, UDP, TCP, TLS, DTLS, portability, compression...}}
 \end{entrylist}
 
 \end{document}

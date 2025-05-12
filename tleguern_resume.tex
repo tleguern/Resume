@@ -19,12 +19,12 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\documentclass[hidelinks]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 
 
 \begin{document}
 
-\header{Tristan}{Le Guern}{Freelance DevOps/SRE}{Gwir ha leal}
+\header{Tristan}{Le Guern}{CTO}{Gwir ha leal}
 
 %-------------------------------------------------------------------------------
 %	SIDEBAR SECTION
@@ -54,7 +54,7 @@ French
 \textbf{Others:} \LaTeX
 \section{Hobbies}
 ~
-Brewing, wine making, cheese making, DIY
+Brewing beer, wine and cider, cooking, DIY, playing music
 \end{aside}
 
 %-------------------------------------------------------------------------------
@@ -63,19 +63,31 @@ Brewing, wine making, cheese making, DIY
 
 \section{Experience}
 
+\subsection{Wide Int}
+\begin{entrylist}
+\entry {2023--2025} {CTO} {Brest, Brittany} {
+  \emph{Led a team of 4 members}
+  \begin{itemize}
+    \item Developed two web applications using Java and HTMX.
+    \item Managed a codebase of approximately 1.5 million lines.
+    \item Performed installation tasks and provided customer support.
+    \item Delivered user training sessions and documentation.
+  \end{itemize}
+}
+\end{entrylist}
+
 \subsection{Gwern}
 \begin{entrylist}
-\entry {2020--2022} {Remote Senior DevOps for Deveryware} {Brest, Brittany} {
+\entry {2020--2023} {Remote Senior DevOps for Deveryware} {Brest, Brittany} {
   \emph{Resident Ansible expert}
   \begin{itemize}
     \item Trained and mentored Junior DevOps employees.
     \item Teached safe shell script development.
     \item Maintenance of many public and private Ansible roles.
-    \item Push for the usage of private Ansible collections.
   \end{itemize}
 }
 \entry {2019--2020} {Remote DevOps for Deveryware} {Brest, Brittany} {
-  \emph{Responsible for the improvements of the developer tools.}
+  \emph{Maitenance and deployment of the software forge}
   \begin{itemize}
     \item Improved the installation and upgrade of SonarQube, Redmine and Wekan through dedicated Ansible roles.
     \item Managed an internal mirror of external git repositories (private Ansible Galaxy).
@@ -85,22 +97,22 @@ Brewing, wine making, cheese making, DIY
   \end{itemize}
 }
 \entry {2018--2019} {Remote DevOps for Deveryware} {Limerick, Ireland} {
-  \emph{Responsible for the deployment of a mobile app's backend.}
+  \emph{Deployment of a mobile app's backend.}
   \begin{itemize}
     \item Handled 240 servers split between five environments.
     \item Overhauled and cleaned up many Ansible roles and playbooks, amounting to roughly 12000 lines of code.
     \item Rewrote most shell scripts to improve their safety and performance.
-    \item Contribution to open source projects (ansible-haproxy, ansible-wazuh-agent, ansible-rcron, ansible-matomo).
+    \item Contribution to open source projects.
     \item Deployment of security tool Wazuh.
-    \item Security tests on the VRRP protocol.
-    \item Handled images creation with Packer and deployment with Terraform.
+%   \item Security tests on the VRRP protocol.
+%   \item Handled images creation with Packer and deployment with Terraform.
     \item Became maintainer of public role Deveryware/ansible-haproxy.
     \item Wrote extensive documentation dedicated to oncall ops.
     \item Trained an internal DevOps on the job.
   \end{itemize}
 }
 \entry {2017--2018} {Remote DevOps for Ahrefs} {Paris, France} {
-  \emph{Worked in an Ops team}
+  \emph{Part of an Ops team}
   \begin{itemize}
     \item Managed multiple Elasticsearch clusters reaching thousands of nodes.
     \item Configuration management with Puppet.
@@ -193,26 +205,26 @@ Brewing, wine making, cheese making, DIY
 
 \section{Open Source}
 \begin{entrylist}
+%\entry
+%{2020}
+%{Ansible modules for Proxmox VE}
+%{Maintainer}
+%{Maintainer for Ansible's modules proxmox, proxmox\_kvm and proxmox\_template inside collection community.general}
 \entry
-{2020}
-{Ansible modules for Proxmox VE}
-{Maintainer}
-{Maintainer for Ansible's modules proxmox, proxmox\_kvm and proxmox\_template inside collection community.general}
-\entry
-{2018}
-{Various Ansible roles}
+{2021}
+{MySQL/MariaDB ansible role}
 {Developer}
-{Wrote various ansible modules for matomo, keepalived, haproxy, ...}
+{Wrote a better MySQL role for Ansible, as a replacement for Jeff Geerling's} 
 \entry
 {2018}
 {www.libravatar.org}
 {Q/A}
 {Team member dedicated to Q/A.}
-\entry
-{2018}
-{libravatar.cgi}
-{Developer}
-{Small, secure implementation of the Libravatar protocol for OpenBSD}
+%\entry
+%{2018}
+%{libravatar.cgi}
+%{Developer}
+%{Small, secure implementation of the Libravatar protocol for OpenBSD}
 %\entry
 %{2011}
 %{libtuntap}
